@@ -87,6 +87,230 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /***** BASE STYLES *****/
+html {
+   font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: white;
+  text-align: left;
+  min-width: 420px;
+  background-color: #020126
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 2.25em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/***** HEADER *****/
+header {
+  background-color: #020126;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .name {
+  width: 80%;
+}
+
+header nav {
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  padding: 0 30px 0 30px;
+  text-decoration: none;
+  font-size: 1.125em;
+  color: white;
+}
+/* -------------------------Mobile styles - Homepage --------------------------------------- */ 
+/***** HERO AREA *****/
+
+.hero-area {
+  background: url('../img/ken-yeung-VnSjwrAy1PQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hero-area h2 {
+  font-size: 2.25em;
+  line-height: 1.2;
+  color: white;
+  margin: 0;
+}
+.hero-area span {
+  font-family: 'Hurricane', cursive;
+  font-size: 2em;
+}
+
+/***** ABOUT *****/
+
+.about .content-wrapper {
+  width: 90%;
+  margin: 0 20px;
+}
+.about h2 {
+  color: white;
+}
+
+.about p {
+  text-align: left;
+  color: white;
+  margin: 0;
+}
+
+/***** WORK *****/
+.work {
+  background: #052599;
+}
+
+work .content-wrapper {
+  margin: 50px 0;
+  width: 90%;
+}
+
+.work div {
+  margin: 10px;
+}
+
+.work h3, p {
+  color: white;
+  text-align: center;
+}
+
+.work h3 {
+  font-size: 2em;
+}
+
+.work i {
+  font-size: 3em;
+  margin-top: 30px;
+}
+
+/***** CONTACT******/
+footer {
+  background: #2E038C;
+}
+
+footer .content-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+footer img {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 30px;
+}
+
+.contact h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.contact h3 {
+  font-size: 2em;
+  line-height: 2.75em;
+}
+
+.contact p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.contact i {
+  font-size: 2em;
+}
+
+.social i {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+.social ul li {
+   display: inline-block;
+   padding: 10px;
+}
+
+.social h4 {
+  font-size: 2.5em;
+  margin: 30px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -175,9 +399,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

@@ -18,33 +18,36 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0145f0a046.js" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lora&family=Montserrat&family=Source+Sans+Pro&display=swap" 
+  rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
   <header>
     <div class="content-wrapper">
-      <div class="header">
+      <div class="name">
         <h1>Danielle Sadler</h1>
-          <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
       </div>
-
+      <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+    <!-- content wrapper ends here-->
     </div>
   </header>
-  <!-- Header content wrapper ends here-->
 
   <main>
     <section class="hero-area">
       <div class="content-wrapper">
-        <h2>Let's turn <span>ideas</span> <br>into clean &amp; elegant code.</h2>
+        <h2>Let's turn <span>ideas</span><br>into clean &amp; elegant code.</h2>
       </div>
     </section>
 
@@ -56,7 +59,7 @@
             As I started working exclusively online, I was fascinated with how easily 
             I could connect with people. I was hooked and wanted to learn how to create a site to fit my own specific needs.
         </p>
-        <p>That curiosity has only amplified with time. 
+        <p><br>That curiosity has only amplified with time. 
             When I learned how to build my first website, I realized I found something
             that gave me the freedom & versatility I was looking for in my work. 
             Now I've made a full switch to front-end development, 
@@ -69,7 +72,7 @@
     <section class="work">
       <div class="content-wrapper">
         <div>
-          <!-- HTML icon goes here -->
+          <p class="fontawesome-icon"><i class="fa-brands fa-html5"></i></p>
           <h3>Hand-Coded HTML</h3>
           <p>My focus is writing clean, well-formatted, semantic HTML5 
             by hand to make sure that the content is easy to read, easy to collaborate, 
@@ -77,7 +80,7 @@
           </p>
         </div>
         <div>
-          <!-- CSS icon goes here -->
+          <p class="fontawesome-icon"><i class="fa-brands fa-css3"></i></p>
           <h3>Well-Organized CSS</h3>
           <p>I pride myself on writing CSS that is easy to read and build on. 
               I focus on keeping my CSS lean and fast to load, and I make it a habit 
@@ -85,7 +88,7 @@
           </p>
         </div>
         <div>
-          <!-- PSD icon goes here -->
+          <p class="fontawesome-icon"><i class="fa-solid fa-image"></i></p>
           <h3>Ease Converting Designs into Code</h3>
           <p>You can trust me to take a designer's PSD and quickly & accurately convert it
             into a webpage that is pixel-perfect match.
@@ -94,7 +97,33 @@
       </div>
       <!-- Work content wrapper ends here -->
     </section>
-
+    
+    <footer>
+      <div class="content-wrapper">
+        <div>
+          <img src="img/text-portrait2.png" id="contact-img" alt="contact image"/>
+        </div>
+        <div class="contact">
+          <h2>Interested in collaborating?</h2>
+          <h3>Let's chat.</h3>
+          <p><i class="fa-solid fa-envelope"></i></p>
+          <a href="mailto:dsadler8000@gmail.com" target="_blank"></a><p>dsadler8000@gmail.com</p></a>
+        </div>
+        <div class="social">
+          <h4>Or, reach out and let's connect.</h4>
+            <ul>
+              <li><a href="https://twitter.com/SadlerDanielleA" target="_blank"><p class="fontawesome-icon"></p><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/sadlerd8000/?hl=en" target="_blank"><p class="fontawesome-icon"></p><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/daniellesadler" target="_blank"><p class="fontawesome-icon"></p><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/dsad8000" target="_blank"><p class="fontawesome-icon"></p><i class="fab fa-github"></i></a></li>
+            </ul>
+         </div>
+         <!-- footer content wraper ends here-->
+      </div>
+   </footer>
+  </main>
+</body>
+</html>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
