@@ -97,7 +97,6 @@ body {
   font-size: 1em;
   color: white;
   text-align: left;
-  min-width: 420px;
   background-color: #020126
 }
 
@@ -123,7 +122,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', serif;
 }
 
 p {
@@ -201,14 +200,15 @@ nav ul li a {
 }
 .hero-area span {
   font-family: 'Hurricane', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 /***** ABOUT *****/
 
 .about .content-wrapper {
   width: 90%;
-  margin: 0 20px;
+  margin: 50px 20px;
 }
 .about h2 {
   color: white;
@@ -226,12 +226,13 @@ nav ul li a {
 }
 
 work .content-wrapper {
-  margin: 50px 0;
+  padding: 50px 0;
   width: 90%;
 }
 
 .work div {
   margin: 10px;
+  padding: 20px 0;
 }
 
 .work h3, p {
@@ -249,14 +250,11 @@ work .content-wrapper {
 }
 
 /***** CONTACT******/
-footer {
-  background: #2E038C;
-}
 
 footer .content-wrapper {
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin: 50px 0;
 }
 
 footer img {
@@ -265,8 +263,7 @@ footer img {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
-  padding: 30px;
+  padding: 30px 0 30px 40px;
 }
 
 .contact h2,
@@ -398,7 +395,9 @@ h3 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
 
 
 @media print,
