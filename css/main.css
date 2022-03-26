@@ -192,6 +192,13 @@ nav ul li a {
   flex-flow: row wrap;
 }
 
+.hero-area .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .hero-area h2 {
   font-size: 2.25em;
   line-height: 1.2;
@@ -209,7 +216,12 @@ nav ul li a {
 .about .content-wrapper {
   width: 90%;
   margin: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
 .about h2 {
   color: white;
 }
@@ -395,12 +407,50 @@ h3 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    }
+
+   @media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+
+  /*General styles*/
+  .content-wrapper {
+    max-width: 640px;
+    margin: 50px 0;
   }
 
+  header {
+    justify-content: space-between;
+  }
 
-@media print,
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header .name {
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  header nav {
+    width: 40%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  header nav ul li a {
+    justify-content: space-around;
+    padding: 0 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+    @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
